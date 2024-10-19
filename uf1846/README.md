@@ -2,7 +2,6 @@
 
 Des de CatSalut nos han mandado implementar una app para gestionar la información sobre los pacientes de la seguridad social. Implementa los diferentes apartados. Hemos creado una aplicación usando Express, EJS y Mongoose para crear y gestionar una base de datos de los pacientes almacenada en MongoDB.
 
-
 ## La tarea
 
 En la mayoría de las ocasiones tan solo es necesario modificar o añadir una o dos líneas de código para obtener la funcionalidad. SOLAMENTE debes modificar el fichero o _endpoint_ especificado para conseguir el requisito.
@@ -20,13 +19,14 @@ Modifica el _endpoint_ `GET /api/patients` (http://localhost:3000/api/patients) 
 
 ## Apartado B
 
-Cuando accedemos a http://localhost:3000 no podemos ver el número de pacientes totales de la base de datos. Modifica el fichero *home.ejs* para arreglar este fallo.
+Cuando accedemos a http://localhost:3000 no podemos ver el número de pacientes totales de la base de datos. Modifica el fichero _home.ejs_ para arreglar este fallo.
 
 ## Apartado C
 
-Disponemos de un formulario para comprobar los datos de un paciente dado su número de la seguridad social. Actualmente no está funcionando correctamente el comprobar si un paciente existe o no en la base de datos. Siempre devuelve lo mismo, pongamos lo que pongamos en el [formulario](http://localhost:3000/form).  Modifica el endpoint `GET /check` para conseguirlo. 
+Disponemos de un formulario para comprobar los datos de un paciente dado su número de la seguridad social. Actualmente no está funcionando correctamente el comprobar si un paciente existe o no en la base de datos. Siempre devuelve lo mismo, pongamos lo que pongamos en el [formulario](http://localhost:3000/form). Modifica el endpoint `GET /check` para conseguirlo.
 
 Puedes probar los siguientes SSN que son pacientes que sí existen en la base de datos:
+
 - David Torres: 67890123456
 - Natalia Gallego: 45678901210
 
@@ -58,6 +58,7 @@ Especifica el número de la SSN que se comprueba en el registro de la consulta:
 ### BONUS - Validaciones - No puntuable
 
 1. Añade validación sobre el [SSN Español](https://docs.trellix.com/es-ES/bundle/data-loss-prevention-11.10.x-classification-definitions-reference-guide/page/GUID-AACF0E3A-3089-4578-83EB-3E6C3DB41684.html) en:
-  - El formulario
-  - El endpoint que realiza la consulta a la base de datos
-  - El modelo 
+
+- El formulario
+- El endpoint que realiza la consulta a la base de datos
+- El modelo
