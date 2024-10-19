@@ -66,7 +66,7 @@ app.get('/check', async (req, res) => {
     const day = String(currentDate.getDate()).padStart(2, '0');
     const fileName = `${year}-${month}-${day}.txt`;
     const patientRecord = `Se ha realizado una consulta sobre el paciente número ${ssn}\n`;
-    const filePath = path.join(__dirname, `${fileName}.txt`);
+    const filePath = path.join(__dirname, `${fileName}`);
 
     fs.appendFile(filePath, patientRecord, (err) => {
         if (err) {
